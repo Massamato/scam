@@ -1,0 +1,47 @@
+/* Grundlayout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* cooler moderner Font */
+    background: linear-gradient(135deg, #ffe6e6, #ffd6f6);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Überschrift */
+p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #d6006c;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.7);
+}
+
+/* Buttons */
+button {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ff5f7e, #ffb6b9);
+    color: white;
+    box-shadow: 0 5px 15px rgba(214,0,108,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover-Effekt */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(214,0,108,0.6);
+}
+
+button:active {
+    transform: scale(0.95);
+}
