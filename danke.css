@@ -1,4 +1,5 @@
 /* Grundlayout */
+/* Grundlayout */
 body {
     margin: 0;
     padding: 0;
@@ -91,4 +92,12 @@ button:hover {
 #flower-canvas {
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(214,0,108,0.3);
+}
+#mini-text {
+    font-size: 1.1rem;
+    color: #d6006c;
+    opacity: 0.8;
+    margin-top: 20px;
+    max-width: 600px;
+    transition: opacity 0.5s ease;
 }
