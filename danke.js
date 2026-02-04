@@ -1,4 +1,4 @@
-const container = document.getElementById("hearts-container");
+const container = document.getElementById("hearts-container");const container = document.getElementById("hearts-container");
 
 // Emoji-Verteilung: 60% Herz, 20% 6, 20% 7
 const emojis = [
@@ -167,3 +167,56 @@ document.getElementById("surprise").addEventListener("click", () => {
 
     setInterval(createHeart, 200);
 });
+document.getElementById("sixtyseven").addEventListener("click", () => {
+    function create67() {
+        const el = document.createElement("div");
+        el.classList.add("heart");
+        el.innerText = Math.random() < 0.6 ? "💖" : (Math.random() < 0.5 ? "6️⃣" : "7️⃣");
+        el.style.left = Math.random() * 100 + "vw";
+        el.style.fontSize = (Math.random() * 20 + 25) + "px";
+        el.style.animationDuration = (Math.random() * 2 + 3) + "s";
+        document.body.appendChild(el);
+
+        setTimeout(() => el.remove(), 5000);
+    }
+
+    setInterval(create67, 120);
+});
+document.getElementById("mini-brief").addEventListener("click", () => {
+    const text = document.getElementById("mini-text");
+    text.style.display = text.style.display === "none" ? "block" : "none";
+});
+document.getElementById("sixtyseven").addEventListener("click", () => {
+    content.innerHTML = "";
+
+    function create67() {
+        const el = document.createElement("div");
+
+        const rand = Math.random();
+        el.textContent = rand < 0.6 ? "6️⃣" : "7️⃣";
+
+        el.classList.add("heart"); // gleiche Animation wie Herzen
+        el.style.left = Math.random() * window.innerWidth + "px";
+        el.style.fontSize = Math.random() * 30 + 20 + "px";
+        el.style.animationDuration = Math.random() * 2 + 3 + "s";
+
+        document.body.appendChild(el);
+
+        setTimeout(() => el.remove(), 6000);
+    }
+
+    setInterval(create67, 150);
+});
+document.getElementById("note2").addEventListener("click", () => {
+    content.innerHTML = `
+        <div>
+            <h2>Hi bebi</h2>
+            <p>
+                Du bist der GOAT,<br>
+                Danke das du so lieb und fürsorglich immer zu mir bist,<br>
+            </p>
+        </div>
+    `;
+});
+
+
